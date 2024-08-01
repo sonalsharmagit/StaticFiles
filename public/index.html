@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/contact">Contact</a>
+        <a href="/stopwatch">Stopwatch</a>
+    </nav>
+    <h1>Welcome to Express</h1>
+    <p>Learning is Fun😊</p>
+    <button id="countButton">COUNT:0</button>
+
+    <script>
+        let count = 0;
+        const button = document.getElementById('countButton');
+        
+        button.addEventListener('click', () => {
+            count++;
+            button.textContent = `COUNT:${count}`;
+        });
+    </script>
+</body>
+</html>
